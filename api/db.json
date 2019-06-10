@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Heineken",
+      "description": "Cerveja de verdade",
+      "price": 4.2
+    },
+    {
+      "id": 2,
+      "name": "Amstel",
+      "description": "Cerveja de verdade",
+      "price": 4.2
+    },
+    {
+      "id": 3,
+      "name": "Budweiser",
+      "description": "Cerveja de Malte",
+      "price": 5
+    },
+    {
+      "id": 4,
+      "name": "Erdinger",
+      "description": "Cerveja de Trigo",
+      "price": 19.9
+    },
+    {
+      "id": 5,
+      "name": "Leffe",
+      "description": "<3",
+      "price": 12
+    },
+    {
+      "id": 6,
+      "name": "Paulaneer",
+      "description": "Weiss",
+      "price": 22.9
+    }
+  ]
+}

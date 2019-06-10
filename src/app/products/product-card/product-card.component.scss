@@ -1,0 +1,47 @@
+:host {
+    .card-title {
+        letter-spacing: 2px;
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            // color: rgb(83, 163, 81);
+            color: #5236ac;
+
+        }
+    }
+
+    h5 {
+        span {
+            position: absolute;
+            right: 15px;
+            background-color: #ffcc00;
+            color: #0f0f0f;
+            letter-spacing: 0 !important;
+        }
+    }
+
+    .price {
+        position: absolute;
+        right: 15px;
+        bottom: 10px;
+    }
+
+    .btn-success {
+        height: 25px;
+        width: 80px;
+        border-radius: 20px;
+        text-align: center !important;
+        padding: 0 0 10px 0 !important;
+        font-size: 14px;
+    }
+
+    .card-text {
+        font-style: italic;
+        color: gray;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+}

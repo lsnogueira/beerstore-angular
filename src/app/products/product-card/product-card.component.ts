@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Product } from '../../utils/models/product.model';
 
 @Component({
   selector: 'app-product-card',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-card.component.scss']
 })
 export class ProductCardComponent implements OnInit {
-
-  constructor() { }
+  @Input() product = null;
+  @Output() buy = new EventEmitter<void>();
+  productCopy: any;
+  constructor() {}
 
   ngOnInit() {
+    this.productCopy = this.product;
   }
 
+  doBuy(e: any): void {
+    this.buy.emit(this.productCopy);
+  }
 }

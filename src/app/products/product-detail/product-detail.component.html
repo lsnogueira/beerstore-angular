@@ -1,3 +1,6 @@
-<p>
-  product-detail works!
-</p>
+<div class="main-details">
+  <h1>{{ product?.name }}</h1>
+  <p>{{ product?.description }}</p>
+  <hr />
+  <p> {{ product?.price | currency }} </p>
+</div>

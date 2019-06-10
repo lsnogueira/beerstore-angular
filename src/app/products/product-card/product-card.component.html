@@ -1,3 +1,17 @@
-<p>
-  product-card works!
-</p>
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">
+      <a routerLink="/produtos/{{ product.id }}">
+        {{ product.name }}
+      </a>
+      <span *ngIf="product.price < 10" class="badge badge-secondary">
+        Sale
+      </span>
+    </h5>
+    <p class="card-text">
+      {{ product.description }}
+    </p>
+    <button class="btn btn-success" (click)="doBuy(product)">Comprar</button>
+    <p class="price">{{ product.price | currency: 'BRL' : 'symbol'}}</p>
+  </div>
+</div>
